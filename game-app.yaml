@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: fargate-namespace
+  name: app-namespace
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: fargate-namespace
+  namespace: app-namespace
   name: deployment-2048
 spec:
   selector:
@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: fargate-namespace
+  namespace: app-namespace
   name: service-2048
 spec:
   ports:
@@ -43,7 +43,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: fargate-namespace
+  namespace: app-namespace
   name: ingress-2048
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
