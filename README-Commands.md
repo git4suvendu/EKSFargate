@@ -30,7 +30,7 @@ eksctl create iamserviceaccount  \
 --region <aws-region-code> \
 --namespace=<kubernetes-namespace> \
 --name=<aws-load-balancer-controller-name> \
---attach-policy-arn=<aws-policy-arn>  \
+--attach-policy-arn=<policy-arn-of-aws>  \
 --override-existing-serviceaccounts \
 --approve \
 --profile <your-aws-account-profile>
