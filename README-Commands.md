@@ -44,7 +44,7 @@ Create AWS Load Balancer Controller using HELM
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
 -n "kubernetes-namespace" \
 --set clusterName="cluster-name" \
---set region="aws-region-code>"\
+--set region="aws-region-code"\
 --set vpcId="vpc-of-the-eks-cluster" \
 --set serviceAccount.create=false \
 --set serviceAccount.name="aws-load-balancer-controller-name" \
