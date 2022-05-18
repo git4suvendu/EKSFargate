@@ -25,3 +25,11 @@ eksctl create fargateprofile  --cluster my-eks-cluster --name app-fargate-profil
 Deploy the Application
 ------------------------
 kubectl apply -f game-app.yaml
+
+
+
+
+Reference:
+https://github.com/stacksimplify/aws-eks-kubernetes-masterclass/tree/master/08-NEW-ELB-Application-LoadBalancers/08-01-Load-Balancer-Controller-Install
+https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
+https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
