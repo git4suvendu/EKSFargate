@@ -1,13 +1,13 @@
 EKS Fargate Cluster Creation
 -----------------------------
 eksctl create cluster \
- --name <cluster-name> \
- --version <eks-cluster-version> \
- --region <aws-region-code> \
+ --name "cluster-name" \
+ --version "eks-cluster-version" \
+ --region "aws-region-code" \
  --without-nodegroup 
  --with-oidc 
  --fargate 
- --profile <your-aws-account-profile>
+ --profile "your-aws-account-profile"
 
 
 eksctl create cluster --name my-eks-cluster --version 1.22 --region eu-west-2 --without-nodegroup --with-oidc --fargate --profile AWS_741032333307_User
